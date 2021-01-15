@@ -1,0 +1,16 @@
+body {
+  background-color: pink;
+}
+p {
+  color: yellow;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+#important {
+  font-size: 40px;
+  color: blueviolet;
+}
