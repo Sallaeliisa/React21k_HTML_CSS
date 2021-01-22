@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: mediumorchid;
+  height: 40px;
+  padding: 10px;
+}
+
+body {
+  background-color: wheat;
+  background-image: url("https://source.unsplash.com/62vi3TG5EDg/1600x900");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: teal;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
+
+.box1 {
+  background-color: cornsilk;
+  border: 10px solid rgb(233, 141, 164);
+}
+
+.box2 {
+  background-color: steelblue;
+  border: dotted chocolate;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  background-color: wheat;
+}

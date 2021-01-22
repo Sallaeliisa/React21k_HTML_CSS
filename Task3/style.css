@@ -1,0 +1,11 @@
+body {
+  background-color: #2f4f4f;
+  color: #ffdab9;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: square;
+}
