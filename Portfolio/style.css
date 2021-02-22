@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.5;
+  margin: 16px 0;
+}
+/* Header area */
+
+header {
+  background-color: #134038;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 7rem;
+  background: url("https://source.unsplash.com/WajET_vzPmI/1600x900") center
+    center/cover no-repeat fixed;
+}
+
+#main_nav {
+  background-color: transparent;
+  height: 7rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#hero-banner {
+  color: #efd197;
+  padding-top: 40vh;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.7rem;
+}
+
+header nav ul {
+  padding-top: 6vh;
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+header a {
+  color: #95c490;
+  text-decoration: none;
+}
+
+/* Main area */
+
+#past,
+#present,
+#future {
+  padding-right: 10rem;
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+  min-height: 20rem;
+  text-align: justify;
+}
+
+#past img,
+#present img,
+#future img {
+  float: left;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 3px;
+}
+
+main h2 {
+  padding-bottom: 3rem;
+}
+
+/* Footer area */
+
+footer {
+  height: 65vh;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  background-color: #134038b3;
+  text-align: center;
+}
+
+footer form {
+  padding-top: 3rem;
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+}
+footer form .form-group {
+  margin: 2 rem 0;
+}
+
+footer form label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 5px;
+  margin-bottom: 1.25rem;
+  border-radius: 3px;
+  border: none;
+  width: 60%;
+  font-size: 16px;
+}
+
+footer form .form-group textarea {
+  height: 8rem;
+}
+
+footer form button {
+  background-color: #efd197;
+  border-radius: 3px;
+  border: none;
+  padding: 16px 32px;
+  color: black;
+  margin-left: 10.22rem;
+  font-size: inherit;
+}
+
+#copywright {
+  text-align: center;
+  color: #e8e2c6;
+  font-size: 12px;
+  margin-top: 3rem;
+}
+
+/* Tablet & Mobile Support */
+
+@media (max-width: 768px) {
+  body {
+    background-color: #efd197;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: #e8e2c6;
+  }
+
+  header {
+    margin-bottom: 3rem;
+  }
+
+  header li {
+    display: inline-block;
+  }
+
+  header a {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #past img,
+  #present img,
+  #future img {
+    float: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    border-radius: 3px;
+  }
+
+  #past,
+  #present,
+  #future {
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    min-height: 20rem;
+    text-align: left;
+  }
+
+  footer {
+    height: 35rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    background-color: #134038b3;
+    text-align: center;
+  }
+
+  footer form .form-group {
+    display: block;
+  }
+
+  footer form .form-group input,
+  footer form .form-group textarea {
+    width: 100%;
+  }
+
+  footer form button {
+    width: 100%;
+    margin: 0;
+  }
+}

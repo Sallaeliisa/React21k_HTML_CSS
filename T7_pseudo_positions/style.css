@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 1.2rem;
+  }
+  
+  header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  
+  a:first-child {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  a:focus {
+    color: green;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: orange;
+    text-decoration: underline;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  li {
+    background: green;
+  }
+  
+  li:nth-child(2n + 10) {
+    background: red;
+  }
+  
+  #hero-banner {
+    height: 50vh;
+    background: url("https://source.unsplash.com/1600x900/?sky") no-repeat fixed
+      center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #hero-banner::after {
+    content: "";
+    background-color: rgba(255, 0, 0, 0.289);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  #hero-banner h3 {
+    z-index: 1;
+    color: white;
+  }
+  #hero-banner h3::first-letter {
+    z-index: 1;
+    color: yellow;
+    font-size: 5rem;
+  }
+  #boxes {
+      background-color: pink;
+      position: relative;
+  }
+  
+  .box {
+    height: 100px;
+    width: 100px;
+    background: green;
+    margin: 1rem;
+  }
+  .box:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .box:nth-child(6) {
+    position: sticky;
+    top: 700px;
+  }
