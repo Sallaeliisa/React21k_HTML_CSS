@@ -65,6 +65,10 @@ header a {
 
 /* Main area */
 
+main h2 {
+  padding-bottom: 3rem;
+}
+
 #past,
 #present,
 #future {
@@ -75,17 +79,49 @@ header a {
   text-align: justify;
 }
 
-#past img,
+/* Cards for past */
+
+#past .past_boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#past .box {
+  background-color: white;
+  height: 42vh;
+  width: 31%;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #aeaeae;
+}
+
+#past .box:hover {
+  box-shadow: 0 0 25px #8a8a8a;
+}
+
+#past .box img {
+  height: 74%;
+  width: 100%;
+  border-radius: 3px;
+}
+
+#past .box a {
+  text-decoration: none;
+  color:#95c490;
+}
+
+#past .box a:hover {
+  text-decoration: none;
+  color: #497354;
+}
+
 #present img,
 #future img {
   float: left;
   margin-top: 1rem;
   margin-right: 1rem;
   border-radius: 3px;
-}
-
-main h2 {
-  padding-bottom: 3rem;
 }
 
 /* Footer area */
@@ -136,6 +172,7 @@ footer form button {
   color: black;
   margin-left: 10.22rem;
   font-size: inherit;
+  box-shadow: 0 0 5px #134038;
 }
 
 #copywright {
