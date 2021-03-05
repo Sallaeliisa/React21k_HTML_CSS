@@ -3,13 +3,11 @@ let ul = document.querySelector("navUl");
 let buttonBackToTop = document.getElementById("backToTop");
 
 const scrollFunction = () => {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        nav.style.background = "#134038b3";
-        navUl.style.padding = "1%";
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+        nav.classList.add("bg");
         buttonBackToTop.style.display = "block";
     } else {
-        nav.style.background = "transparent";
-        navUl.style.padding = "3.7%";
+        nav.classList.remove("bg");
         buttonBackToTop.style.display = "none";
     }
 };
