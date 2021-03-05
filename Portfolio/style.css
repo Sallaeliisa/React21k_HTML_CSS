@@ -42,7 +42,12 @@ header {
 }
 
 .bg #navUl {
-  padding: 1%;
+  padding: .5%;
+}
+
+.bg #logo {
+  margin-top: .4vh;
+  height: 4vh;
 }
 
 #hero-banner {
@@ -72,20 +77,30 @@ header {
   filter: blur(80px);
 }
 
-header h1 {
+#hero-banner h1 {
   font-size: 3.7rem;
   color: #efd197;
   z-index: 1;
 }
 
 header nav ul {
-  padding-top: 6vh;
+  
   text-align: center;
 }
 
 header li {
   display: inline-block;
-padding: 0 1rem;
+  padding: 0 1rem;
+}
+
+#logo {
+  margin-top: 5vh;
+  height: 5vh;
+  transition: all .5s;
+}
+#logo:hover {
+  margin-top: 4vh;
+  height: 6vh;
 }
 
 header nav a {
@@ -382,11 +397,11 @@ footer form button:hover {
     display: inline-block;
   }
 
-  header a {
-    font-size: 1rem;
+  header nav a {
+    font-size: 16px;
   }
 
-  header h1 {
+#hero-banner h1 {
     font-size: 6vh;
     text-align: center;
   }
