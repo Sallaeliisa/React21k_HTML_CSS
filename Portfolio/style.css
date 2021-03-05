@@ -49,6 +49,10 @@ header {
   margin-top: .4vh;
   height: 4vh;
 }
+.bg #logo:hover {
+  margin-top: 0;
+  height: 4.4vh;
+}
 
 #hero-banner {
   display: flex;
@@ -66,10 +70,10 @@ header {
 #hero-banner::after {
   content: "";
   position:absolute;
-  height: 60%;
+  height: 90%;
   width: 100%;
   border-radius: 5px;
-  background-color: rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.45);
   -webkit-filter: blur(80px);
   -moz-filter: blur(80px);
   -o-filter: blur(80px);
@@ -94,12 +98,12 @@ header li {
 }
 
 #logo {
-  margin-top: 5vh;
+  margin-top: 4vh;
   height: 5vh;
   transition: all .5s;
 }
 #logo:hover {
-  margin-top: 4vh;
+  margin-top: 3vh;
   height: 6vh;
 }
 
