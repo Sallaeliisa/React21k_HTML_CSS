@@ -1,0 +1,142 @@
+:root {
+    --element-color: radial-gradient(rgb(198, 198, 249), rgb(156, 156, 203));
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to left bottom, red, orange);
+    /* background-image: radial-gradient(
+        ellipse at bottom,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+    ); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    margin: 0 auto;
+    height:300px;
+    width: 200px;
+    background-image: radial-gradient(rgb(198, 198, 249), rgb(156, 156, 203));
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+    box-shadow: 0 0 5px #333;
+}
+
+.card:hover {
+    box-shadow: inset 0 0 5px #333, 0 0 25px #333;
+    /* transform: rotate(150deg); */
+    /* transform: skewX(360deg); */
+    /* transform: skew(15deg, 15deg); */
+    /* transform: scale(3, 4); */
+    /* transform: scaleY(10); */
+    /* transform: scale(1.5); */
+    /*  */
+    /* transform: translateY(200px);
+    transform: translate(50px, 50px); */
+    /* transform: translate3d(50px, 50px, 50px); */
+    transform: perspective(400px) rotateX(45deg);
+}
+
+.circle {
+    border-radius: 50%;
+    background-image: var(--element-color);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    position: relative;
+}
+
+/* @keyframes example {
+    from {
+        background: blue;
+    }
+    to {
+        background: green;
+    }
+} */
+
+/* @keyframes example {
+    0% {
+        background: blue;
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background: green;
+        top: 0;
+        left: 200px;
+    }
+    50% {
+        background: yellow;
+        top: 200px;
+        left: 200px
+    }
+    75% {
+        background: pink;
+        top: 200px;
+        left: 0;
+    }
+    100% {
+        background: orange;
+        top: 0;
+        left: 0;
+    }
+} */
+
+h1 {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    text-align: left;
+  }
+
+.text1 {
+    width: fit-content;
+}
+
+.text1 h1::after {
+content: "";
+height: 4px;
+width: 0;
+display: block;
+background: green;
+transition: .5s ease-in all;
+}
+
+.text1 h1:hover::after {
+    width: 100%;
+}
+
+.text2 h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid darkslateblue;
+    transition: all 1s;
+}
+
+.text2:hover h1::before {
+    top:0;
+}
+
