@@ -8,18 +8,23 @@
     <script src="https://kit.fontawesome.com/42de6050e4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="fav2.svg"/>
   </head>
   <body>
-    <header id="header">
-      <div class="container">
-        <div id="header_nav">
+    <header>
         <nav>
+          <button id="mobileButton">
+            <span class="material-icons"> menu </span>
+          </button>
           <ul id="navUl">
-            <h3>
               <li>
-                <a href="#header"><img id="logo" src="Logo2.svg" alt=""></a>
+                <a href="#hero-banner"><img id="logo" src="Logo2.svg" alt="Salla Vuorikko"></a>
               </li>
             <li><a href="#past">Work</a></li>
             <li><a href="#present">Experience</a></li>
@@ -27,38 +32,36 @@
             <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="animation.html">Animation</a></li>
             <li><a href="#footer">Contact me</a></li>
-          </h3>
           </ul>
         </nav>
-      </div>
-      <section id="hero-banner">
+      <div id="hero-banner">
         <h1>Welcome to my portfolio</h1>
-      </section>
+      </div>
     </header>
     <main>
       <section id = "past">
         <h2>Work</h2>
         <div class="past_boxes">
         <div class="box">
-          <img src="https://source.unsplash.com/vrbZVyX2k4I/" alt="plant" />
-          <h3><p>Lorem ipsum dolor</p></h3>
+          <img src="https://source.unsplash.com/vrbZVyX2k4I/" alt="plants" />
+          <h3>Lorem ipsum dolor</h3>
           <a href="link">See more</a>
         </div> 
         <div class="box">
-          <img src="https://source.unsplash.com/hLxqYJspAkE/" alt="plant" />
-          <h3><p>Lorem ipsum dolor</p></h3>
+          <img src="https://source.unsplash.com/5mgtTFa7Y3M/" alt="flowers" />
+          <h3>Lorem ipsum dolor</h3>
           <a href="link">See more</a>
         </div> 
         <div class="box">
-          <img src="https://source.unsplash.com/-qvrwWbzvpA" alt="plant" />
-          <h3><p>Lorem ipsum dolor</p></h3>
+          <img src="https://source.unsplash.com/-qvrwWbzvpA" alt="chair in a meadow" />
+          <h3>Lorem ipsum dolor</h3>
           <a href="link">See more</a>
         </div> 
         </div> 
   </section>
   <section id = "present">
       <h2>Experience</h2>
-      <img src="https://source.unsplash.com/DpphPG9ENsI/200x300" alt="">
+      <img src="https://source.unsplash.com/DpphPG9ENsI/200x300" alt="plant">
       <p>
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sit magni eveniet impedit incidunt vero ad saepe. Ea soluta aut facilis esse quia omnis sunt eligendi quae, doloribus, perspiciatis eum quam illum nobis fugit labore velit est expedita similique porro impedit dolore, deleniti aperiam. Provident, eveniet obcaecati? Animi laboriosam culpa placeat quas quae, iusto dolores esse ipsa vel, aspernatur reprehenderit consequuntur pariatur maiores excepturi labore! Hic possimus mollitia veniam aut? Hic laudantium accusantium ducimus atque dolores aliquam quas vitae, perspiciatis sunt dolore. Quos architecto placeat, quia accusamus deleniti a quibusdam. Earum nemo porro quod voluptate soluta ipsum veritatis veniam suscipit eveniet delectus rem non nulla harum, voluptas dolores ipsa mollitia esse aspernatur. Dicta minus, quas nam aspernatur assumenda tenetur repellat provident aliquam voluptatum velit in cumque odio esse voluptatem impedit! Eos, illo. Perspiciatis doloribus cupiditate recusandae maiores eligendi, consequatur asperiores, ducimus laborum possimus, odio dolor provident expedita debitis neque adipisci ullam perferendis! Eligendi maiores aliquam, neque reiciendis sit ratione! Eos molestias temporibus qui, culpa incidunt maiores vitae id alias cupiditate laudantium ab consectetur fuga, provident consequuntur! Sint nisi, iure tenetur nam cupiditate dolor quis quam delectus officia esse quibusdam tempora ea eligendi dolorem placeat? Tempore repellat reiciendis pariatur placeat quae.
       </p>
@@ -68,26 +71,28 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sit magni eveniet i
       <div class="skill_boxes">
         <div class="box">
       <i class="fab fa-css3 fa-4x"></i>
+      <p>CSS3</p>
           <div id="bar1" class="progressbar"></div>
         </div>
         <div class="box">
       <i class="fab fa-html5 fa-4x"></i>
+      <p>HTML5</p>
       <div id="bar2" class="progressbar"></div>
     </div>
     <div class="box">
       <i class="fab fa-js-square fa-4x"></i>
+      <p>Javascript</p>
       <div id="bar3" class="progressbar"></div>
     </div>
     <div class="box">
       <i class="fab fa-java fa-4x"></i>
+      <p>Java</p>
       <div id="bar4" class="progressbar"></div>
     </div>
     </div>
       </section>
-    </div>
     </main>
     <footer id="footer">
-      <div class="container">
       <h2>Contact me</h2>
       <form>
         <div class="form-group">
@@ -107,10 +112,10 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sit magni eveniet i
       <button id="backToTop">
         <i class="fas fa-angle-double-up fa-3x"></i>
       </button>
-      <section id="copywright">
+      <section id="copyright">
           <p>Copyright; My Website2021</p>
-      </section>
-      </div> 
+          <p>Pictures from Unsplash</p>
+      </section> 
     </footer>
     <script src="script.js"></script>
   </body>

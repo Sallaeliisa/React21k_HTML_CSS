@@ -4,66 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Salla Vuorikko" />
-    <meta name="description" content="Salla Vuorikko's portfolio">
-    <script src="https://kit.fontawesome.com/42de6050e4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="description" content="Salla Vuorikko's portfolio" />
+    <script
+      src="https://kit.fontawesome.com/42de6050e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="fav2.svg"/>
   </head>
   <body id="animationBody">
     <header>
-        <div id="header_nav">
-        <nav>
-          <ul id="navUl">
-            <h3>
-              <li>
-                <a href="./index.html#header"><img id="logo" src="Logo2.svg" alt=""></a>
-              </li>
+      <nav>
+        <button id="mobileButton">
+          <span class="material-icons"> menu </span>
+        </button>
+        <ul id="navUl">
+            <li>
+              <a href="./index.html#header"
+                ><img id="logo" src="Logo2.svg" alt=""
+              /></a>
+            </li>
             <li><a href="./index.html#past">Work</a></li>
             <li><a href="./index.html#present">Experience</a></li>
             <li><a href="./index.html#future">Skills</a></li>
             <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="#footer">Contact me</a></li>
-          </h3>
-          </ul>
-        </nav>
-      </div>
+            <li><a href="#animationFooter">Contact me</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="staticFly" id="first"></div>
-<div class="staticFly" id="second"></div>
-<div class="staticFly" id="third"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="staticFly" id="first"></div>
+      <div class="staticFly" id="second"></div>
+      <div class="staticFly" id="third"></div>
     </main>
     <footer id="animationFooter">
       <h2>Contact me</h2>
       <form>
         <div class="form-group">
-        <label for="name">Your name</label>
-        <input type="text" name="name" id="name"/>
-      </div>
-      <div class="form-group">
-        <label for="email">Your email</label>
-        <input type="email" name="email" id="email"/>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
-      </div>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
         <button type="submit">Send message</button>
       </form>
       <button id="backToTop">
         <i class="fas fa-angle-double-up fa-3x"></i>
       </button>
-      <section id="copywright">
-          <p>Copyright; My Website2021</p>
+      <section id="copyright">
+        <p>Copyright; My Website2021</p>
+        <p>pictures from Unsplash</p>
       </section>
-      </div>
     </footer>
     <script src="script.js"></script>
   </body>
