@@ -82,7 +82,7 @@ header nav a:hover {
 #hero-banner {
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-top: 0;
   background-color: #134038;
@@ -105,9 +105,10 @@ header nav a:hover {
   filter: blur(80px);
 }
 #hero-banner h1 {
-  font-size: 3.7rem;
+  font-size: 8vh;
   color: #efd197;
   z-index: 1;
+  margin-left: 9vw;
 }
 
 /* Main area */
@@ -218,7 +219,7 @@ main h2 {
 
 /* Gallery */
 
-#galleryBody{
+#galleryBody {
   background-image: linear-gradient(to bottom, white, var(--lightGreen));
 }
 #gallery {
@@ -718,10 +719,7 @@ footer form button:hover {
 } */
 
 @media (max-width: 576px) {
-  /* header {
-    margin-bottom: 3rem;
-  } */
-
+ 
   #mobileButton {
     display: block;
     background-color: transparent;
@@ -759,8 +757,9 @@ footer form button:hover {
     margin-bottom: 2rem;
   }
   #hero-banner h1 {
-    font-size: 6vh;
-    text-align: center;
+    font-size: 5vh;
+    z-index: 1;
+    margin: 0 50vw 30vh 10vw;
   }
   #present img {
     float: none;
