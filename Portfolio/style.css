@@ -173,10 +173,10 @@ main h2 {
 }
 #future .box {
   background-color: white;
-  height: 25vh;
-  width: 15%;
+  height: fit-content;
+  width: fit-content;
   margin-right: 1rem;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   border-radius: 3px;
   box-shadow: 0 0 5px #aeaeae;
   transition: box-shadow 0.5s;
@@ -193,7 +193,7 @@ main h2 {
   border-width: 2.5px;
   border-radius: 13px;
   height: 25px;
-  width: 7rem;
+  width: 8rem;
   padding: 2px;
 }
 .progressbar:after {
@@ -790,16 +790,15 @@ footer form button:hover {
   #future .skill_boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   #future .box {
-    height: fit-content;
-    width: 47%;
-    margin: 0 0 1rem 0;
+    width: 40vw;
+    margin: 0 .5rem .5rem 0;
     padding: 1rem 0 0 0rem;
   }
   .progressbar {
-    height: 18px;
+    height: 20px;
     width: 80%;
     margin: 0 0.5rem 1rem 0.5rem;
   }
